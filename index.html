@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PrintHub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .navbar-brand {
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .home-section {
+      margin-top: 80px;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .home-section h1 {
+      font-size: 100px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      border: 1px solid wheat;
+      border-radius: 8px;
+      overflow: hidden;
+      padding: 1px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card h5 {
+      margin: 0.8rem 0 0.5rem;
+      font-size: 20px;
+    }
+
+    .card p {
+      flex-grow: 1;
+    }
+
+    .card h6 {
+      color: black;
+      margin: 0.5rem 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .button {
+      padding: 0.6rem 1rem;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      align-self: start;
+    }
+
+    .button:hover {
+      background-color: darkgreen;
+    }
+
+    #about {
+      background-color: white;
+    }
+
+    #Contacts{
+        background-color: white;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background:black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="navbar-brand">PrintHub</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#Products">Products</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#Contacts">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <section class="home-section">
+    <h1>PrintHub</h1>
+    <p>Discover unbeatable deals and top-quality printing solutions at PrintHub — your one-stop shop for printers, parts, and expert service that keeps you printing without pause!</p>
+  </section>
+
+  <section id="Products" class="container">
+    <h2 class="section-title">Available Products</h2>
+    <div class="row">
+      <div class="card">
+        <img src="pixma.avif" alt="Canon InkJet Printer">
+        <h5>Canon InkJet Pro Printer</h5>
+        <p>Experience high-quality, cost-effective printing with the Canon InkJet Printer built for home and office productivity.</p>
+        <h6>NPR 28,500.00 (incl. VAT)</h6>
+        <button class="button" onclick="addToCart(0)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="inkjetcartridge.jpg" alt="Ink Cartridge">
+        <h5>Compatible Ink Cartridge</h5>
+        <p>Enjoy vibrant prints and reliable performance with our high-quality compatible ink cartridges.</p>
+        <h6>NPR 2,750.00</h6>
+        <button class="button" onclick="addToCart(1)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="head.jpg" alt="Printer Head">
+        <h5>Printer Head</h5>
+        <p>High-performance compatible printer head designed for delivering sharp, reliable prints with easy installation.</p>
+        <h6>NPR 3,800.00</h6>
+        <button class="button" onclick="addToCart(2)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="epson.jpg" alt="Ribbon Cartridge">
+        <h5>Ribbon Cartridge</h5>
+        <p>Deliver crisp, long-lasting prints with our ribbon cartridges—perfect for dot matrix and POS printers.</p>
+        <h6>NPR 300.00</h6>
+        <button class="button" onclick="addToCart(3)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="drum.webp" alt="Drum Unit">
+        <h5>Drum Unit</h5>
+        <p>Premium drum unit designed for flawless printing performance in office and commercial environments.</p>
+        <h6>NPR 3,500 – NPR 5,000</h6>
+        <button class="button" onclick="addToCart(4)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="toner.jpg" alt="Toner Cartridge">
+        <h5>Toner Cartridge</h5>
+        <p>Print bold, sharp, and professional documents with our high-yield toner cartridges that never let you down.</p>
+        <h6>NPR 6,500</h6>
+        <button class="button" onclick="addToCart(5)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row">
+      <div class="card">
+        <h5>Printer Repair & Maintenance</h5>
+        <p>On-site and in-store repair services for all types of printers—quick diagnosis and reliable fixes.</p>
+      </div>
+
+      <div class="card">
+        <h5>Refilling Services</h5>
+        <p>Professional toner and ink cartridge refilling at affordable rates with no compromise on quality.</p>
+      </div>
+
+      <div class="card">
+        <h5>Printer Parts & Accessories</h5>
+        <p>Genuine and compatible toner cartridges, ink bottles, drum units, ribbon cartridges, printer heads, cables, and more.</p>
+      </div>
+
+      <div class="card">
+        <h5>Online Order & Delivery</h5>
+        <p>Shop from our website and get your printer or parts delivered to your doorstep.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2 class="section-title">About Us</h2>
+    <p style="text-align: center;">
+      Welcome to PrintHub  your trusted destination for top-quality printers, parts, and expert services. We specialize in a wide range of printing solutions, including inkjet and laser printers, toner and ink cartridges, drum units, ribbon cartridges, and all kinds of printer accessories.
+      At PrintHub, our mission is simple: to keep your printing smooth, affordable, and hassle-free. Whether you're a student, business owner, or office manager, we provide the best products at competitive prices with personalized support you can rely on.
+    </p>
+  </section>
+
+  <section id="Contacts" class="container">
+    <h2 class="section-title">Contact Us</h2>
+    
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="name@example.com" required />
+      <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    
+  </section>
+
+  <footer>
+    &copy; 2025 PrintHub. All rights reserved.
+  </footer>
+
+</body>
+</html>
