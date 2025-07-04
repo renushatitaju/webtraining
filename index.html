@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PrintHub</title>
   <style>
     body {
@@ -122,8 +123,8 @@
       background-color: white;
     }
 
-    #Contacts{
-        background-color: white;
+    #Contacts {
+      background-color: white;
     }
 
     form {
@@ -132,7 +133,8 @@
       gap: 1rem;
     }
 
-    input, textarea {
+    input,
+    textarea {
       padding: 0.5rem;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -142,11 +144,12 @@
     footer {
       text-align: center;
       padding: 20px;
-      background:black;
+      background: black;
       color: white;
     }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -162,7 +165,8 @@
 
   <section class="home-section">
     <h1>PrintHub</h1>
-    <p>Discover unbeatable deals and top-quality printing solutions at PrintHub — your one-stop shop for printers, parts, and expert service that keeps you printing without pause!</p>
+    <p>Discover unbeatable deals and top-quality printing solutions at PrintHub — your one-stop shop for printers,
+      parts, and expert service that keeps you printing without pause!</p>
   </section>
 
   <section id="Products" class="container">
@@ -171,9 +175,10 @@
       <div class="card">
         <img src="pixma.avif" alt="Canon InkJet Printer">
         <h5>Canon InkJet Pro Printer</h5>
-        <p>Experience high-quality, cost-effective printing with the Canon InkJet Printer built for home and office productivity.</p>
+        <p>Experience high-quality, cost-effective printing with the Canon InkJet Printer built for home and office
+          productivity.</p>
         <h6>NPR 28,500.00 (incl. VAT)</h6>
-        <button class="button" onclick="addToCart(0)">Add to Cart</button>
+        <button class="button">Add to Cart</button>
       </div>
 
       <div class="card">
@@ -181,15 +186,16 @@
         <h5>Compatible Ink Cartridge</h5>
         <p>Enjoy vibrant prints and reliable performance with our high-quality compatible ink cartridges.</p>
         <h6>NPR 2,750.00</h6>
-        <button class="button" onclick="addToCart(1)">Add to Cart</button>
+        <button class="button">Add to Cart</button>
       </div>
 
       <div class="card">
         <img src="head.jpg" alt="Printer Head">
         <h5>Printer Head</h5>
-        <p>High-performance compatible printer head designed for delivering sharp, reliable prints with easy installation.</p>
+        <p>High-performance compatible printer head designed for delivering sharp, reliable prints with easy
+          installation.</p>
         <h6>NPR 3,800.00</h6>
-        <button class="button" onclick="addToCart(2)">Add to Cart</button>
+        <button class="button">Add to Cart</button>
       </div>
 
       <div class="card">
@@ -197,7 +203,7 @@
         <h5>Ribbon Cartridge</h5>
         <p>Deliver crisp, long-lasting prints with our ribbon cartridges—perfect for dot matrix and POS printers.</p>
         <h6>NPR 300.00</h6>
-        <button class="button" onclick="addToCart(3)">Add to Cart</button>
+        <button class="button">Add to Cart</button>
       </div>
 
       <div class="card">
@@ -205,15 +211,16 @@
         <h5>Drum Unit</h5>
         <p>Premium drum unit designed for flawless printing performance in office and commercial environments.</p>
         <h6>NPR 3,500 – NPR 5,000</h6>
-        <button class="button" onclick="addToCart(4)">Add to Cart</button>
+        <button class="button">Add to Cart</button>
       </div>
 
       <div class="card">
         <img src="toner.jpg" alt="Toner Cartridge">
         <h5>Toner Cartridge</h5>
-        <p>Print bold, sharp, and professional documents with our high-yield toner cartridges that never let you down.</p>
+        <p>Print bold, sharp, and professional documents with our high-yield toner cartridges that never let you down.
+        </p>
         <h6>NPR 6,500</h6>
-        <button class="button" onclick="addToCart(5)">Add to Cart</button>
+        <button class="button">Add to Cart</button>
       </div>
     </div>
   </section>
@@ -233,7 +240,8 @@
 
       <div class="card">
         <h5>Printer Parts & Accessories</h5>
-        <p>Genuine and compatible toner cartridges, ink bottles, drum units, ribbon cartridges, printer heads, cables, and more.</p>
+        <p>Genuine and compatible toner cartridges, ink bottles, drum units, ribbon cartridges, printer heads, cables,
+          and more.</p>
       </div>
 
       <div class="card">
@@ -246,19 +254,23 @@
   <section id="about" class="container">
     <h2 class="section-title">About Us</h2>
     <p style="text-align: center;">
-      Welcome to PrintHub  your trusted destination for top-quality printers, parts, and expert services. We specialize in a wide range of printing solutions, including inkjet and laser printers, toner and ink cartridges, drum units, ribbon cartridges, and all kinds of printer accessories.
-      At PrintHub, our mission is simple: to keep your printing smooth, affordable, and hassle-free. Whether you're a student, business owner, or office manager, we provide the best products at competitive prices with personalized support you can rely on.
+      Welcome to PrintHub your trusted destination for top-quality printers, parts, and expert services. We specialize
+      in a wide range of printing solutions, including inkjet and laser printers, toner and ink cartridges, drum units,
+      ribbon cartridges, and all kinds of printer accessories.
+      At PrintHub, our mission is simple: to keep your printing smooth, affordable, and hassle-free. Whether you're a
+      student, business owner, or office manager, we provide the best products at competitive prices with personalized
+      support you can rely on.
     </p>
   </section>
 
   <section id="Contacts" class="container">
     <h2 class="section-title">Contact Us</h2>
-    
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="name@example.com" required />
-      <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
-      <button type="submit" class="btn">Submit</button>
-    
+
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="name@example.com" required />
+    <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+    <button type="submit" class="btn">Submit</button>
+
   </section>
 
   <footer>
@@ -266,4 +278,5 @@
   </footer>
 
 </body>
+
 </html>
